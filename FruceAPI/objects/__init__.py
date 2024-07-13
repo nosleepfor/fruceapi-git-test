@@ -208,7 +208,7 @@ class GDPSConfig:
         srv = json['Srv']
         self.srvid = srv['srvid']
         self.srv_name = srv['srv_name']
-        self.plan = {1: 'Press Start', 2: 'Singularity', 3: 'Takeoff'}[srv['plan']]
+        self.plan = {1: 'Press Start', 2: 'Singularity', 3: 'Takeoff', 4: 'Foundation'}[srv['plan']]
         self.owner_id = srv['owner_id']
         self.user_count = srv['user_count']
         self.level_count = srv['level_count']
